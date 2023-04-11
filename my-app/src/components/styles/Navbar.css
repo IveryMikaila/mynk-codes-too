@@ -1,0 +1,38 @@
+:root{
+    --theme-color: #4701FF;
+    --text-color:#fff;
+}
+
+.navBar{
+  position: fixed;
+width: 100%;
+bottom: 0;
+display: flex;
+justify-content: space-between;
+  color:var(--text-color);
+  z-index: 7;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+.fnt-weight{
+    font-weight: 100;
+}
+.navBar a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 3px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+.navBar a:hover{
+    font-size: 10px;
+}
+.navLeft{
+    display: flex;
+}
+
+.navDescription, .navLocation, .navGroup{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}

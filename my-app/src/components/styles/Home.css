@@ -1,0 +1,16 @@
+:root{
+    --theme-color: #4701FF;
+    --text-color:#fff;
+}
+
+.homePage{
+    background-color: var(--theme-color);
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+     position: absolute;
+   top:0;
+   left: 0;
+   right: 0;
+   z-index: -7;
+}
