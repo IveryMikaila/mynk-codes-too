@@ -12,7 +12,7 @@ import ProjectFive from './components/pages/ProjectFive';
 
 function App() {
   return (
-<>
+<div div className="App">
 <BrowserRouter>
 <Navbar />
 <Routes>
@@ -24,7 +24,7 @@ function App() {
   <Route path="/work/facechat" element={<ProjectFive />} />
 </Routes>
 </BrowserRouter>
-</>
+</div>
   );
 }
 
