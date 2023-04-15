@@ -200,6 +200,7 @@ color: var(--secondary-color);
     justify-content: space-evenly;
     font-family: sans-serif;
   }
+
   .description1One, .description2Two{
     width: 30%;
 }

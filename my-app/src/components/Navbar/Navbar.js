@@ -26,6 +26,7 @@ const Navbar = () => {
 let navAboutSection = document.getElementById('navbarAboutSection');
 if (location.pathname === "/work/candyl" || location.pathname === "/work/weather-app") {
   navAboutSection.style.backgroundColor = "rgba(0,0,0,.85)";
+  navAboutSection.style.color = "#fff";
   hamburgerMenu.style.color = '#fff';
   sidebar.style.backgroundColor = "rgba(0,0,0,.85)";
   sidebar.style.color ='#fff'
