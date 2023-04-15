@@ -4,11 +4,11 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 //Componenets 
 import Navbar from "./components/Navbar/Navbar";
 import Home from './components/pages/Home';
-import ProjectOne from './components/pages/ProjectOne';
-import ProjectTwo from './components/pages/ProjectTwo';
-import ProjectThree from './components/pages/ProjectThree';
-import ProjectFour from './components/pages/ProjectFour';
-import ProjectFive from './components/pages/ProjectFive';
+import ProjectOne from './components/pages/projects/ProjectOne';
+import ProjectTwo from './components/pages/projects/ProjectTwo';
+import ProjectThree from './components/pages/projects/ProjectThree';
+import ProjectFour from './components/pages/projects/ProjectFour';
+
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
   <Route path="/work/job-list" element={<ProjectTwo />} />
   <Route path="/work/weather-app" element={<ProjectThree />} />
   <Route path="/work/boyblondey" element={<ProjectFour />} />
-  <Route path="/work/facechat" element={<ProjectFive />} />
+  <Route path="https://www.shecodes.io/graduates/28712-mikaila-ivery" />
 </Routes>
 </BrowserRouter>
 </div>

@@ -1,0 +1,263 @@
+:root{
+    --theme-color: #4701FF;
+    --text-color:#fff;
+    --secondary-color:#000;
+}
+@font-face {
+    font-family: 'themeFont';
+    src: url('../../assets/fonts/Druk\ Wide\ Web\ Bold\ Regular.ttf');
+}
+/* Page Header for Black Pages */
+.pageLogo{
+    font-family: 'themeFont';
+    text-decoration: none;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
+    transition: all 350ms ease-in-out;
+}
+.pageLogo:hover{
+    -webkit-text-fill-color: var(--text-color);
+}
+@media screen and (max-width: 667px) {
+    .pageLogo{
+        font-size: 2rem;
+    }
+  
+}
+.project-backBtn{
+    position: fixed;
+right: 0;
+margin: 10px;
+margin-right: 50px;
+margin-top: 50px;
+color: var(--text-color);
+}
+@media screen and (max-width: 667px) {
+    
+    .project-backBtn{
+        left: 0;
+        margin-top: 120px;
+        margin-left: 20px;
+    }
+}
+/* Page Header for White Pages */
+.pageTwoLogo{
+    font-family: 'themeFont';
+    text-decoration: none;
+    font-size: 2.5rem;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    -webkit-text-fill-color: var(--secondary-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--secondary-color);
+    transition: all 350ms ease-in-out;
+}
+.pageTwoLogo:hover{
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 667px) {
+    .pageTwoLogo{
+        font-size: 2rem;
+    }
+  
+}
+.projectTwo-backBtn{
+    position: fixed;
+right: 0;
+margin: 10px;
+margin-right: 50px;
+margin-top: 50px;
+color: var(--secondary-color);
+}
+@media screen and (max-width: 667px) {
+    
+    .projectTwo-backBtn{
+        left: 0;
+        margin-top: 120px;
+        margin-left: 20px;
+    }
+}
+
+/* Projects 1 and 3 */
+.projectOneFullPage{
+    background-color: black;
+    color: var(--text-color);
+    width: 100vw;
+    min-height: 100vh;
+}
+.space-div{
+    height: 200px;
+}
+.pgOneHeading{
+    font-family: 'themeFont';
+    text-align: right;
+    margin-right: 50px;
+    font-size: 10rem;
+}
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--theme-color);
+    transform-origin: 0%;
+  }
+  .projectOneFooter h2{
+    font-family: sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 50px;
+  }
+.projectOneFooter a{
+    text-decoration: none;
+    font-family: 'themeFont';
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
+}
+.projectOneFooter a:hover{
+    -webkit-text-fill-color: var(--text-color); 
+}
+
+.pgOneDescription{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+.description1, .description2{
+    width: 30%;
+}
+.description1 p{
+    font-weight: 100;
+}
+.description3 a{
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--text-color);
+}
+.description3 p{
+    margin-bottom: 0;
+}
+.d3P{
+    margin-top: 0;
+}
+  /* Projects 2 and 4 */
+  .pgTwoHeading{
+    font-family: 'themeFont';
+    text-align: right;
+    margin-right: 50px;
+    font-size: 10rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--secondary-color);
+  }
+  .projectTwoFooter h2{
+    font-family: sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .projectTwoFooter a{
+    text-decoration: none;
+    font-family: 'themeFont';
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 100px;
+    -webkit-text-fill-color: var(--secondary-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--secondary-color);
+  }
+  .projectTwoFooter a:hover{
+    text-decoration: none;
+    font-family: 'themeFont';
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 100px;
+    -webkit-text-fill-color: var(--text-color);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--secondary-color);
+  }
+
+  .pgTwoDescription{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+  }
+  .description1One, .description2Two{
+    width: 30%;
+}
+.description1One p{
+    font-weight: 100;
+}
+.description3Three a{
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+.description3Three p{
+    margin-bottom: 0;
+}
+.d3ThreePd3ThreeP{
+    margin-top: 0;
+}
+@media screen and (max-width: 667px) {
+    /* Black Pages */
+    .pgOneHeading{
+        font-size: 5rem;
+    }
+  .projectOneFooter h2{
+    font-size: 40px;
+  }
+  .projectOneFooter a{
+font-size: 70px;
+  }
+  .pgOneDescription{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 30px;
+  }
+  .description1, .description2{
+    width: auto;
+}
+/* White Pages */
+ .pgTwoHeading{
+    font-size: 5rem;
+}
+.projectTwoFooter h2{
+    font-size: 40px; 
+}
+ .projectTwoFooter a{
+    font-size: 70px;
+}
+.projectTwoFooter a:hover{
+    font-size: 70px;  
+}
+.pgTwoDescription{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 30px;
+}
+.description1One, .description2Two{
+    width: auto;
+}
+}

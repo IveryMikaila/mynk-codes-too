@@ -1,26 +1,14 @@
 export const SidebarData = [
-    {
-        number: '01',
-     title:'about',
-     path: '/#about',
-     cName:'sideBar-item'
-    },
-    {
-        number: '02',
-    title:'resume',
-    path: '/#resume',
-    cName:'sideBar-item'
-   },
    {
     number: '03',
     title:'linkedin',
     path: 'https://www.linkedin.com/in/mikaila-ivery-259218223/',
-    cName:'sideBar-item'
+    cName:'sideBar-item colorLinks'
    },
    {
     number: '04',
-    title:'instagram',
-    path: 'https://www.instagram.com/fkamynk/',
+    title:'youtube',
+    path: 'https://www.youtube.com/watch?v=hMif-EdLGAs&t=4s&ab_channel=MikailaIvery',
     cName:'sideBar-item'
    },
    {
