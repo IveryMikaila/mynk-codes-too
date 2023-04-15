@@ -116,7 +116,7 @@ useEffect(()=>{
     </div>
     <div className='navGroup'>
    <Link className='changeToWhite' onClick={showNavAbout} to={'#'}><span className='fnt-weight'>01</span> about</Link>
-   <Link className='changeToWhite' to={'/#resume'}><span className='fnt-weight'>02</span> resume</Link>
+   <Link download={'Resume'} className='changeToWhite' to={'/#resume'}><span className='fnt-weight'>02</span> resume</Link>
     </div>
   </div>
   <div className='navRight'>
