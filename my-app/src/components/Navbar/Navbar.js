@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import {Link} from 'react-router-dom';
 import {SidebarData} from './SidebarData'
 import '../styles/Navbar.css'
+import resume from '../../assets/images/IveryMikailaResume.pdf'
 
 const Navbar = () => {
   console.log(document.querySelectorAll('.colorLinks'));
@@ -37,6 +38,8 @@ if (location.pathname === "/work/candyl" || location.pathname === "/work/weather
   document.getElementsByClassName('colorLinks')[3].style.color=  "#fff";
   document.getElementsByClassName('colorLinks')[4].style.color=  "#fff";
   document.getElementsByClassName('colorLinks')[5].style.color= "#fff";
+  document.getElementsByClassName('colorLinks')[6].style.color= "#fff";
+  document.getElementsByClassName('colorLinks')[7].style.color= "#fff";
 }
 if(location.pathname === "/work/job-list" || location.pathname === "/work/boyblondey"){
   navAboutSection.style.backgroundColor = "rgba(255,255,255,.85)";
@@ -53,6 +56,8 @@ if(location.pathname === "/work/job-list" || location.pathname === "/work/boyblo
   document.getElementsByClassName('colorLinks')[3].style.color=  "#000";
   document.getElementsByClassName('colorLinks')[4].style.color=  "#000";
   document.getElementsByClassName('colorLinks')[5].style.color= "#000";
+  document.getElementsByClassName('colorLinks')[6].style.color= "#000";
+  document.getElementsByClassName('colorLinks')[7].style.color= "#000";
 }
 if(location.pathname === '/'){
   navAboutSection.style.backgroundColor = "rgba(72,1,255,.85)";
@@ -69,6 +74,8 @@ if(location.pathname === '/'){
   document.getElementsByClassName('colorLinks')[3].style.color=  "#fff";
   document.getElementsByClassName('colorLinks')[4].style.color=  "#fff";
   document.getElementsByClassName('colorLinks')[5].style.color= "#fff";
+  document.getElementsByClassName('colorLinks')[6].style.color= "#fff";
+  document.getElementsByClassName('colorLinks')[7].style.color= "#fff";
 }
 }
 
@@ -116,7 +123,7 @@ useEffect(()=>{
     </div>
     <div className='navGroup'>
    <Link className='changeToWhite' onClick={showNavAbout} to={'#'}><span className='fnt-weight'>01</span> about</Link>
-   <Link download={'Resume'} className='changeToWhite' to={'/#resume'}><span className='fnt-weight'>02</span> resume</Link>
+   <a download='IveryMikaila_Resume' className='changeToWhite' href={resume}><span className='fnt-weight'>02</span> resume</a>
     </div>
   </div>
   <div className='navRight'>
@@ -181,8 +188,10 @@ useEffect(()=>{
   <li className='sideBar-item aboutSectionLink' onClick={showAbout}>
     <span className='fnt-weight'>01</span> about
   </li>
-  <li className='sideBar-item'>
+  <li className='sideBar-item colorLinks'>
+    <a className='colorLinks' href={resume} download={'IveryMikaila_Resume'}>
     <span className='fnt-weight'>02</span> resume
+    </a>
   </li>
 {SidebarData.map((item,index) =>{
   return(

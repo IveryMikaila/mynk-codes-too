@@ -40,9 +40,9 @@ Codes<br />
   </div>
   <div className='description3Three'>
 <Link target='_blank' to={'https://expo.dev/@mdesigns/joblist-react?serviceType=classic&distribution=expo-go'}>job-list App</Link>
-<p className='d3ThreeP'>job-list</p>
+<p className='d3PTwo'>job-list</p>
 <p>Role:</p>
-<p className='d3ThreeP'>Front-end Developer</p>
+<p className='d3PTwo'>Front-end Developer</p>
   </div>
 </div>
    

@@ -236,6 +236,9 @@ transition: all 350ms ease-in;
     font-weight: 300;
     font-family:  Helvetica;
 }
+.colorLinks{
+    display: block;
+}
 @media screen and (min-width: 667px) {
     .aboutSection{
         display: none;

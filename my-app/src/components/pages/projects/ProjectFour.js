@@ -41,9 +41,9 @@ Codes<br />
   </div>
   <div className='description3Three'>
 <Link target='_blank' to={'https://boyblondey.com/'}>boyblondey.com</Link>
-<p className='d3ThreePd3ThreeP'>Boy Blondey</p>
+<p className='d3PTwo'>Boy Blondey</p>
 <p>Role:</p>
-<p className='d3ThreePd3ThreeP'>Front-end Developer</p>
+<p className='d3PTwo'>Front-end Developer</p>
   </div>
 </div>
 
