@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useSpring } from "framer-motion";
+import Video from '../../video/Video';
+import jobApp from '../../../assets/videos/job-listPage.mp4'
 
 const ProjectTwo = () => {
   const { scrollYProgress } = useScroll();
@@ -27,9 +29,6 @@ Codes<br />
  <div className='space-div'></div>
  <div className='projectTwoPageContainer'>
   <h1 className='pgTwoHeading'>job-list </h1>
-
-
- 
   <div className='pgTwoDescription'>
   <div className='description1One'>
 <h1>job-list is a prototype mobile IOS app I created that helps you find and apply to local jobs perfect for you.</h1>
@@ -45,7 +44,10 @@ Codes<br />
 <p className='d3PTwo'>Front-end Developer</p>
   </div>
 </div>
-   
+{/* Video Animation */}
+<Video source={jobApp} />
+
+   {/*Page Footer  */}
  <div className='projectTwoFooter'>
   <h2>next project</h2>
   <Link className='pojectTwoFooterLink' to={"/work/weather-app"}>weather-app</Link>

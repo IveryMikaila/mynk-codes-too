@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../../styles/Pages.css'
 import { motion, useScroll, useSpring } from "framer-motion";
+import Video from '../../video/Video';
+import bbVideo from '../../../assets/videos/bbPage_1.mp4'
 
 const ProjectFour = () => {
   const { scrollYProgress } = useScroll();
@@ -29,8 +31,6 @@ Codes<br />
  <div className='space-div'></div>
  <div className='projectTwoPageContainer'>
   <h1 className='pgTwoHeading'>boy blondey</h1>
-
-
   <div className='pgTwoDescription'>
   <div className='description1One'>
 <h1>I currently work as a freelance Front-end Developer at Boy Blondey Co, where I write custom code to intergrate into Shopify Liquid Theme templates.</h1>
@@ -46,7 +46,10 @@ Codes<br />
 <p className='d3PTwo'>Front-end Developer</p>
   </div>
 </div>
+{/* Video Animation */}
+<Video source={bbVideo} />
 
+{/* Page Footer */}
   <div className='projectTwoFooter'>
   <h2>next project</h2>
   <Link className='pojectTwoFooterLink' to={"/work/candyl"}>candyl</Link>

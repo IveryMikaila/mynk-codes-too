@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import '../../styles/Pages.css'
 import { motion, useScroll, useSpring } from "framer-motion";
+import Video from '../../video/Video';
+import candylVideo from '../../../assets/videos/candylPage.mp4'
 
 const ProjectOne = () => {
   const { scrollYProgress } = useScroll();
@@ -44,11 +46,9 @@ Codes<br />
 <p className='d3P'>Web Designer, Front-end Developer </p>
   </div>
 </div>
-
-
-
-
-
+{/* Video Animation Section */}
+<Video source={candylVideo} />
+{/* Page Footer */}
  <div className='projectOneFooter'>
   <h2>next project</h2>
   <Link className='pojectOneFooterLink' to={"/work/job-list"}>job-list</Link>

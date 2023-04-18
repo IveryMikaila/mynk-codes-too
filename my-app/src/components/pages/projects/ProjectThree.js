@@ -2,6 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import '../../styles/Pages.css'
 import { motion, useScroll, useSpring } from "framer-motion";
+import Video from '../../video/Video';
+import weatherApp from '../../../assets/videos/weatherappPage.mp4'
 
 const ProjectThree = () => {
   const { scrollYProgress } = useScroll();
@@ -27,9 +29,7 @@ Codes<br />
  {/* Main Section */}
  <div className='space-div'></div>
  <div className='projectPageContainer'>
- <h1 className='pgOneHeading'>Weather App </h1>
-
-   
+ <h1 className='pgOneHeading'>Weather App </h1> 
 <div className='pgOneDescription'>
   <div className='description1'>
 <h1>My Weather Web App was created to convieniently check the weather in your local residence or 1,000 miles away.  </h1>
@@ -45,8 +45,10 @@ Codes<br />
 <p className='d3P'> Web Designer, Front-end Developer</p>
   </div>
 </div>
+{/* Video Animation */}
+<Video source={weatherApp} />
 
-
+{/* Page Footer */}
  <div className='projectOneFooter'>
   <h2>next project</h2>
   <Link className='pojectOneFooterLink' to={"/work/boyblondey"}>boy blondey</Link>

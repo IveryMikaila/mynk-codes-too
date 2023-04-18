@@ -19,6 +19,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--text-color);
     transition: all 350ms ease-in-out;
+    z-index: 5;
 }
 .pageLogo:hover{
     -webkit-text-fill-color: var(--text-color);
@@ -57,6 +58,7 @@ color: var(--text-color);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--secondary-color);
     transition: all 350ms ease-in-out;
+    z-index: 5;
 }
 .pageTwoLogo:hover{
     -webkit-text-fill-color: transparent;
