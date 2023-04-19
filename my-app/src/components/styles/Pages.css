@@ -37,6 +37,7 @@ margin: 10px;
 margin-right: 50px;
 margin-top: 50px;
 color: var(--text-color);
+z-index: 5;
 }
 @media screen and (max-width: 667px) {
     
@@ -76,6 +77,7 @@ margin: 10px;
 margin-right: 50px;
 margin-top: 50px;
 color: var(--secondary-color);
+z-index: 5;
 }
 @media screen and (max-width: 667px) {
     

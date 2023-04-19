@@ -27,6 +27,10 @@ Codes<br />
  <Link className='projectTwo-backBtn' to={"/work/weather-app"}>
  <svg  stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
  </Link>
+
+ {/* Video Animation */}
+<Video source={bbVideo} />
+
  {/* Main Section */}
  <div className='space-div'></div>
  <div className='projectTwoPageContainer'>
@@ -46,8 +50,6 @@ Codes<br />
 <p className='d3PTwo'>Front-end Developer</p>
   </div>
 </div>
-{/* Video Animation */}
-<Video source={bbVideo} />
 
 {/* Page Footer */}
   <div className='projectTwoFooter'>

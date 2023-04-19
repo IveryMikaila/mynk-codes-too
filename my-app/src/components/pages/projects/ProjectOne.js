@@ -26,6 +26,9 @@ Codes<br />
  <Link className='project-backBtn' to={'/'}>
  <svg  stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
  </Link>
+{/* Video Animation Section */}
+<Video source={candylVideo} />
+
  {/* Main Section */}
  <div className='space-div'></div>
  <div className='projectPageContainer'>
@@ -46,8 +49,7 @@ Codes<br />
 <p className='d3P'>Web Designer, Front-end Developer </p>
   </div>
 </div>
-{/* Video Animation Section */}
-<Video source={candylVideo} />
+
 {/* Page Footer */}
  <div className='projectOneFooter'>
   <h2>next project</h2>
