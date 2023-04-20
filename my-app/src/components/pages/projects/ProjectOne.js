@@ -2,8 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import '../../styles/Pages.css'
 import { motion, useScroll, useSpring } from "framer-motion";
-import Video from '../../video/Video';
-import candylVideo from '../../../assets/videos/candylPage.mp4'
+import PageTransition from '../PageTransition';
+
 
 const ProjectOne = () => {
   const { scrollYProgress } = useScroll();
@@ -15,7 +15,11 @@ const ProjectOne = () => {
 
   return (
     <>
+    {/* Page Transition Wrapper */}
+       <PageTransition>
+        {/* Scrollbar Progress Animation */}
     <motion.div className="progress-bar" style={{ scaleX }} />
+    {/* Page Logo */}
     <Link to={'/'} className='pageLogo'>
 Mynk <br/>
 Codes<br />
@@ -26,14 +30,11 @@ Codes<br />
  <Link className='project-backBtn' to={'/'}>
  <svg  stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
  </Link>
-{/* Video Animation Section */}
-<Video source={candylVideo} />
 
  {/* Main Section */}
  <div className='space-div'></div>
  <div className='projectPageContainer'>
   <h1 className='pgOneHeading'>candyl </h1>
- 
 <div className='pgOneDescription'>
   <div className='description1'>
 <h1> candyl is an ecommerce site I created that sells mock-up candle products. </h1>
@@ -55,11 +56,11 @@ Codes<br />
   <h2>next project</h2>
   <Link className='pojectOneFooterLink' to={"/work/job-list"}>job-list</Link>
  </div>
-
-
  </div>
+ {/* Bottom Spacer */}
  <div className='space-div'></div>
 </div>
+</PageTransition>
 </>
   )
 }

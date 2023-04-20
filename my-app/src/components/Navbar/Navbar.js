@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import {Link} from 'react-router-dom';
 import {SidebarData} from './SidebarData'
 import '../styles/Navbar.css'
-import resume from '../../assets/images/IveryMikailaResume.pdf'
+import resume from '../../assets/IveryMikailaResume.pdf'
 
 const Navbar = () => {
   console.log(document.querySelectorAll('.colorLinks'));

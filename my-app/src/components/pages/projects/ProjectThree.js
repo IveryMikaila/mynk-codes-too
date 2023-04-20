@@ -2,8 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 import '../../styles/Pages.css'
 import { motion, useScroll, useSpring } from "framer-motion";
-import Video from '../../video/Video';
-import weatherApp from '../../../assets/videos/weatherappPage.mp4'
+import PageTransition from '../PageTransition';
+
 
 const ProjectThree = () => {
   const { scrollYProgress } = useScroll();
@@ -15,7 +15,11 @@ const ProjectThree = () => {
 
   return (
     <>
+    {/* Page Transition wrapper */}
+      <PageTransition>
+        {/* Scrollbar Progress animation */}
         <motion.div className="progress-bar" style={{ scaleX }} />
+        {/* Page logo */}
     <Link to={'/'} className='pageLogo'>
 Mynk <br/>
 Codes<br />
@@ -26,8 +30,6 @@ Codes<br />
  <Link className='project-backBtn' to={"/work/job-list"}>
  <svg  stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
  </Link>
-{/* Video Animation */}
-<Video source={weatherApp} />
 
  {/* Main Section */}
  <div className='space-div'></div>
@@ -54,10 +56,11 @@ Codes<br />
   <h2>next project</h2>
   <Link className='pojectOneFooterLink' to={"/work/boyblondey"}>boy blondey</Link>
  </div>
-
  </div>
+ {/* Page spacer */}
  <div className='space-div'></div>
 </div>
+</PageTransition>
 </>
   )
 }
