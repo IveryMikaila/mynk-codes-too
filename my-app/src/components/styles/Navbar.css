@@ -41,6 +41,7 @@ justify-content: space-between;
     flex-direction: column;
     margin: 10px;
 }
+
 /* About Section in Navbar */
 .navAboutSection{
     background-color: rgba(72,1,255,.85);
@@ -53,6 +54,9 @@ width: 100vw;
 height: 100vh;
 position: fixed;
 transition: all 350ms ease-in;
+/* To make Copyright footnote move to bottom */
+display: flex;
+flex-direction: column;
 }
 .navAboutSection.active{
     left: 0;
@@ -98,6 +102,15 @@ transition: all 350ms ease-in;
     font-weight: 300;
     font-family:  Helvetica;
 }
+
+.navBarFn{
+    font-size: 10px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    align-self: center;
+    text-align: center;
+}
+
 @media screen and (max-width: 667px) {
     .navAboutSection{
         display: none;

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import '../../styles/Pages.css'
 import { motion, useScroll, useSpring } from "framer-motion";
 import PageTransition from '../PageTransition';
+// import Slideshow from '../Slideshow';
 
 
 const ProjectOne = () => {
@@ -50,7 +51,8 @@ Codes<br />
 <p className='d3P'>Web Designer, Front-end Developer </p>
   </div>
 </div>
-
+{/* Slideshow */}
+{/* <Slideshow /> */}
 {/* Page Footer */}
  <div className='projectOneFooter'>
   <h2>next project</h2>

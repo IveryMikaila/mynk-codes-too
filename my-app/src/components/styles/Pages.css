@@ -112,6 +112,7 @@ z-index: 5;
     height: 10px;
     background: var(--theme-color);
     transform-origin: 0%;
+    z-index: 20;
   }
   .projectOneFooter h2{
     font-family: sans-serif;

@@ -168,7 +168,12 @@ useEffect(()=>{
  </ul>
  </div>
  </div>
+ <small className='navBarFn'>
+ Copyright @2023 Mynk Codes too. All rights reserved. Font made from oNline Web Fonts is licensed by CC BY 3.0
+ <br/>Web Design Inspiration from Eric Van Holtz ♡
+</small>
 </div>
+
 {/* Sidebar Menu */}
 <svg className='menu-svg' onClick={showSidebar} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>
 {/* Sidebar */}
@@ -206,6 +211,7 @@ useEffect(()=>{
 </ul>
     </div>
     <div className='footnote'>
+    Web Design Inspiration from Eric Van Holtz ♡<br/>
       Copyright @2023 Mynk Codes too. All rights reserved.<br/>
       <div>Font made from <Link className='colorLinks' target='_blank' to="http://www.onlinewebfonts.com">oNline Web Fonts</Link>is licensed by CC BY 3.0</div>
     </div>
